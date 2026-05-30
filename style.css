@@ -109,19 +109,13 @@ border-radius:8px;
 cursor:pointer;
 }
 .logo{
-display:flex;
-align-items:center;
-gap:12px;
-font-size:28px;
-font-weight:700;
-}
-
-.logo span{
+font-size:42px;
+font-weight:800;
 background:linear-gradient(90deg,#ff0000,#ff7b00);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+text-shadow:0 0 20px rgba(255,0,0,.4);
 }
-
 nav{
 display:flex;
 gap:25px;
