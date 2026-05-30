@@ -14,9 +14,13 @@ background:#050505;
 }
 
 .logo{
-font-size:28px;
-font-weight:bold;
-color:red;
+font-size:38px;
+font-weight:800;
+color:#ff1e1e;
+display:flex;
+align-items:center;
+gap:10px;
+text-shadow:0 0 15px rgba(255,0,0,.7);
 }
 
 nav a{
