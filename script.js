@@ -5,6 +5,12 @@ category:"Pakistani",
 image:"https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600",
 youtube:"https://youtube.com"
 },
+  {
+title:"Tere Bin",
+category:"Pakistani",
+image:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400",
+youtube:"https://youtube.com"
+},
 {
 title:"Kurulus Osman",
 category:"Turkish",
