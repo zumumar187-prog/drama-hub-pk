@@ -116,17 +116,6 @@ font-size:28px;
 font-weight:700;
 }
 
-.logo-box{
-width:42px;
-height:42px;
-background:#111;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:8px;
-font-size:24px;
-}
-
 .logo span{
 background:linear-gradient(90deg,#ff0000,#ff7b00);
 -webkit-background-clip:text;
