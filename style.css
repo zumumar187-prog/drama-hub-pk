@@ -118,9 +118,10 @@ object-fit:cover;
 border-radius:12px;
 }
 
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 30px rgba(229,9,20,.4);
+..card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 10px 40px rgba(229,9,20,.4);
+border:1px solid #e50914;
 }
 .card button{
 background:#e50914;
@@ -185,5 +186,5 @@ transition:all 0.3s ease;
 
 .card:hover{
 transform:translateY(-10px) scale(1.05);
-box-shadow:0 0 30px rgba(255,0,0,.5);
+box-shadow:0 10px 40px rgba(229,9,20,.4);
 }
