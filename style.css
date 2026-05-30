@@ -98,9 +98,10 @@ padding:50px;
 }
 
 #dramaContainer{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+display:flex;
 gap:20px;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 .card{
