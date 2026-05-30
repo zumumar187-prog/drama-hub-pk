@@ -2,19 +2,19 @@ const dramas = [
 {
 title:"Kabhi Main Kabhi Tum",
 category:"Pakistani",
-image:"https://picsum.photos/400/250?1",
+image:"https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600",
 youtube:"https://youtube.com"
 },
 {
 title:"Kurulus Osman",
 category:"Turkish",
-image:"https://picsum.photos/400/250?2",
+image:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600",
 youtube:"https://youtube.com"
 },
 {
 title:"Yeh Rishta Kya Kehlata Hai",
 category:"Indian",
-image:"https://picsum.photos/400/250?3",
+image:"https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600",
 youtube:"https://youtube.com"
 }
 ];
