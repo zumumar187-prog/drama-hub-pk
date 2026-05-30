@@ -2,21 +2,29 @@ const dramas = [
 {
 title:"Kabhi Main Kabhi Tum",
 category:"Pakistani",
-youtube:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+image:"https://picsum.photos/400/250?1",
+youtube:"https://youtube.com"
 },
 {
 title:"Kurulus Osman",
 category:"Turkish",
-youtube:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+image:"https://picsum.photos/400/250?2",
+youtube:"https://youtube.com"
+},
+{
+title:"Yeh Rishta Kya Kehlata Hai",
+category:"Indian",
+image:"https://picsum.photos/400/250?3",
+youtube:"https://youtube.com"
 }
 ];
 
 const container = document.getElementById("dramaContainer");
 
-if(container){
-dramas.forEach(drama=>{
+dramas.forEach(drama => {
 container.innerHTML += `
-<div style="background:#111;padding:15px;margin:10px;border-radius:10px;">
+<div class="card">
+<img src="${drama.image}">
 <h3>${drama.title}</h3>
 <p>${drama.category}</p>
 <a href="${drama.youtube}" target="_blank">
@@ -25,4 +33,3 @@ container.innerHTML += `
 </div>
 `;
 });
-}
