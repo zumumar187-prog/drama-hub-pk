@@ -112,21 +112,51 @@ cursor:pointer;
 display:flex;
 align-items:center;
 gap:12px;
-font-size:40px;
-font-weight:800;
-text-shadow:0 0 20px rgba(255,0,0,.8);
+font-size:28px;
+font-weight:700;
 }
 
 .logo-box{
-width:40px;
-height:40px;
+width:42px;
+height:42px;
 background:#e50914;
-border-radius:8px;
-font-size:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+color:#fff;
+font-size:22px;
+box-shadow:0 0 15px rgba(229,9,20,.6);
 }
 
 .logo span{
 background:linear-gradient(90deg,#ff0000,#ff7b00);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff3b3b;
+}
+
+.watch-btn{
+background:#e50914;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
 }
