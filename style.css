@@ -136,3 +136,16 @@ background:linear-gradient(90deg,#ff0000,#ff7b00);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:38px;
+font-weight:800;
+}
+
+.logo span{
+background:linear-gradient(90deg,#ff0000,#ff6b00);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
