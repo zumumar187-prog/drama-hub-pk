@@ -1,57 +1,37 @@
-const dramas = [
-{
-id:1,
-title:"Kabhi Main Kabhi Tum",
-category:"Pakistani",
-image:"https://picsum.photos/300/400?1",
-youtube:"https://youtube.com"
-},
-{
-id:2,
-title:"Tere Bin",
-category:"Pakistani",
-image:"https://picsum.photos/300/400?2",
-youtube:"https://youtube.com"
-},
-{
-id:3,
-title:"Kurulus Osman",
-category:"Turkish",
-image:"https://picsum.photos/300/400?3",
-youtube:"https://youtube.com"
-},
-{
-id:4,
-title:"Yeh Rishta Kya Kehlata Hai",
-category:"Indian",
-image:"https://picsum.photos/300/400?4",
-youtube:"https://youtube.com"
-}
-];
+const API_URL =
+"https://script.google.com/macros/s/AKfycbyPkk2psZGdwAsqDsQdMvKCtIvYeQpHDqb51ffFiJ3BPEaOCe5AcoY07zZ59gCXTOGe-g/exec";
 
-const latestContainer = document.getElementById("latestContainer");
 const pakistaniContainer = document.getElementById("pakistaniContainer");
 const turkishContainer = document.getElementById("turkishContainer");
 const indianContainer = document.getElementById("indianContainer");
 
 function createCard(drama){
+
 return `
-<div class="card" onclick="openDrama(${drama.id})">
-<img src="${drama.image}">
+<div class="card">
+
+<img src="${drama.thumbnail}" alt="${drama.title}">
+
 <h3>${drama.title}</h3>
+
 <p>${drama.category}</p>
 
-<button onclick="openDrama(${drama.id})">
+<button onclick="window.location.href='episode.html?id=${drama.id}'">
 Watch Episodes
 </button>
 
 </div>
 `;
+
 }
 
-dramas.forEach(drama => {
+fetch(API_URL)
+.then(res => res.json())
+.then(data => {
 
-latestContainer.innerHTML += createCard(drama);
+const dramas = data.dramas || data;
+
+dramas.forEach(drama => {
 
 if(drama.category === "Pakistani"){
 pakistaniContainer.innerHTML += createCard(drama);
@@ -64,8 +44,10 @@ turkishContainer.innerHTML += createCard(drama);
 if(drama.category === "Indian"){
 indianContainer.innerHTML += createCard(drama);
 }
+
 });
 
-function openDrama(id){
-window.location.href = `episode.html?id=${id}`;
-}
+})
+.catch(error => {
+console.log(error);
+});
