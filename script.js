@@ -33,6 +33,22 @@ const dramas = data.dramas || data;
 
 dramas.forEach(drama => {
 
+  const hero = document.querySelector(".hero");
+
+if (dramas.length > 0) {
+
+const latestDrama = dramas[0];
+
+hero.style.backgroundImage =
+`linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('${latestDrama.thumbnail}')`;
+
+hero.style.backgroundSize = "cover";
+hero.style.backgroundPosition = "center";
+hero.style.backgroundRepeat = "no-repeat";
+
+}
+
 if(drama.category === "Pakistani"){
 pakistaniContainer.innerHTML += createCard(drama);
 }
