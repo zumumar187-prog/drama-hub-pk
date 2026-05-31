@@ -13,7 +13,7 @@ document.getElementById("episodesContainer");
 
 const episodes =
 data.episodes.filter(
-ep => ep.DramaID == dramaId
+ep => String(ep.DramaID) === String(dramaId)
 );
 
 episodes.forEach(ep => {
