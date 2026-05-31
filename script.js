@@ -1,6 +1,8 @@
 const API_URL =
 "https://script.google.com/macros/s/AKfycbyPkk2psZGdwAsqDsQdMvKCtIvYeQpHDqb51ffFiJ3BPEaOCe5AcoY07zZ59gCXTOGe-g/exec";
 
+const latestContainer = document.getElementById("latestContainer");
+
 const pakistaniContainer = document.getElementById("pakistaniContainer");
 const turkishContainer = document.getElementById("turkishContainer");
 const indianContainer = document.getElementById("indianContainer");
