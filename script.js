@@ -33,7 +33,7 @@ const dramas = data.dramas || data;
 
 dramas.forEach(drama => {
 
-  
+latestContainer.innerHTML += createCard(drama);  
 if(drama.category === "Pakistani"){
 pakistaniContainer.innerHTML += createCard(drama);
 }
