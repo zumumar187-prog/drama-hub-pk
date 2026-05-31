@@ -37,11 +37,6 @@ cursor:pointer;
 }
 
 .hero{
-  .hero{
-min-height:700px;
-background-size:cover;
-background-position:center;
-}
 padding:120px 80px;
 background:
 linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
