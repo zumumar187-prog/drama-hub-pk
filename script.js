@@ -67,3 +67,26 @@ latestPoster.src = dramas[0].thumbnail;
 }
 
 });
+const latestTitle = document.getElementById("latestTitle");
+const latestDescription = document.getElementById("latestDescription");
+const latestWatchBtn = document.getElementById("latestWatchBtn");
+
+fetch(API_URL)
+.then(res => res.json())
+.then(data => {
+
+const dramas = data.dramas || data;
+
+if(dramas.length > 0){
+
+latestTitle.innerText = dramas[0].title;
+
+latestDescription.innerText = dramas[0].description;
+
+latestWatchBtn.onclick = function(){
+window.location.href = `episode.html?id=${dramas[0].id}`;
+};
+
+}
+
+});
