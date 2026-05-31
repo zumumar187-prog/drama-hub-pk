@@ -1,23 +1,27 @@
 const dramas = [
 {
+id:1,
 title:"Kabhi Main Kabhi Tum",
 category:"Pakistani",
 image:"https://picsum.photos/300/400?1",
 youtube:"https://youtube.com"
 },
 {
+id:2,
 title:"Tere Bin",
 category:"Pakistani",
 image:"https://picsum.photos/300/400?2",
 youtube:"https://youtube.com"
 },
 {
+id:3,
 title:"Kurulus Osman",
 category:"Turkish",
 image:"https://picsum.photos/300/400?3",
 youtube:"https://youtube.com"
 },
 {
+id:4,
 title:"Yeh Rishta Kya Kehlata Hai",
 category:"Indian",
 image:"https://picsum.photos/300/400?4",
@@ -36,9 +40,11 @@ return `
 <img src="${drama.image}">
 <h3>${drama.title}</h3>
 <p>${drama.category}</p>
-<a href="${drama.youtube}" target="_blank">
-<button>Watch Now</button>
-</a>
+
+<button onclick="openDrama(${drama.id})">
+Watch Episodes
+</button>
+
 </div>
 `;
 }
