@@ -25,8 +25,22 @@ if(episodes.length === 0){
 container.innerHTML = "<h2>No Episodes Found For This Drama</h2>";
 return;
 }
+  const drama = data.dramas.find(
+d => String(d.id) === String(dramaId)
+);
+
+if(drama){
+
 document.getElementById("dramaTitle").innerHTML =
-`🎬 Kabhi Main Kabhi Tum <span style="font-size:18px;color:#aaa;">(${episodes.length} Episodes)</span>`;
+`🎬 ${drama.title} <span style="font-size:18px;color:#aaa;">(${episodes.length} Episodes)</span>`;
+
+document.getElementById("dramaDesc").innerText =
+drama.description || "";
+
+document.getElementById("dramaPoster").src =
+drama.thumbnail || "";
+
+}
 episodes.forEach(ep => {
 
 container.innerHTML += `
