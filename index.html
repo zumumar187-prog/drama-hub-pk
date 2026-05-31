@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drama Hub PK</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-<div class="logo">
-DramaHub PK
-</div>
-    
+<div class="logo">DramaHub PK</div>
+
 <nav>
 <a href="#">Home</a>
-<a href="#">Latest</a>
-<a href="#">Turkish</a>
-<a href="#">Pakistani</a>
-<a href="#">Indian</a>
+<a href="#latest">Latest</a>
+<a href="#pakistani">Pakistani</a>
+<a href="#turkish">Turkish</a>
+<a href="#indian">Indian</a>
 <a href="#">About</a>
 <a href="#">Contact</a>
 </nav>
@@ -26,6 +27,7 @@ DramaHub PK
 
 <section class="hero">
 <div class="hero-content">
+
 <h1>Your Ultimate <span>Drama</span> Destination</h1>
 
 <p>
@@ -35,17 +37,47 @@ Discover the best Turkish, Pakistani and Indian dramas.
 <input type="text" placeholder="Search dramas...">
 
 <div class="stats">
-<div><h2>2000+</h2><p>Dramas</p></div>
-<div><h2>50K+</h2><p>Episodes</p></div>
-<div><h2>1M+</h2><p>Viewers</p></div>
+<div>
+<h2>2000+</h2>
+<p>Dramas</p>
 </div>
+
+<div>
+<h2>50K+</h2>
+<p>Episodes</p>
+</div>
+
+<div>
+<h2>1M+</h2>
+<p>Viewers</p>
+</div>
+</div>
+
 </div>
 </section>
 
-<section class="latest">
+<!-- Latest -->
+<section class="latest" id="latest">
 <h2>Latest Dramas</h2>
+<div id="latestContainer"></div>
+</section>
 
-<div id="dramaContainer"></div>
+<!-- Pakistani -->
+<section class="latest" id="pakistani">
+<h2>Pakistani Dramas</h2>
+<div id="pakistaniContainer"></div>
+</section>
+
+<!-- Turkish -->
+<section class="latest" id="turkish">
+<h2>Turkish Dramas</h2>
+<div id="turkishContainer"></div>
+</section>
+
+<!-- Indian -->
+<section class="latest" id="indian">
+<h2>Indian Dramas</h2>
+<div id="indianContainer"></div>
 </section>
 
 <script src="script.js"></script>
