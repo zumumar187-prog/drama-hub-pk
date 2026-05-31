@@ -214,3 +214,47 @@ width:32px;
 height:22px;
 border-radius:3px;
 }
+#dramaTitle{
+font-size:50px;
+margin-bottom:30px;
+color:#fff;
+text-shadow:0 0 20px rgba(229,9,20,.6);
+}
+
+#episodesContainer{
+max-width:1200px;
+margin:auto;
+}
+
+.episode-card{
+background:linear-gradient(135deg,#111,#1b1b1b);
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+border-left:5px solid #e50914;
+cursor:pointer;
+transition:0.3s;
+}
+
+.episode-card:hover{
+transform:translateX(10px);
+box-shadow:0 0 25px rgba(229,9,20,.4);
+}
+
+.episode-card h3{
+margin:0;
+font-size:24px;
+color:white;
+}
+
+.episode-card span{
+color:#aaa;
+font-size:14px;
+}
+
+body{
+background:#000;
+color:white;
+font-family:Arial,sans-serif;
+padding:30px;
+}
