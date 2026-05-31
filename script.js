@@ -32,7 +32,7 @@ const indianContainer = document.getElementById("indianContainer");
 
 function createCard(drama){
 return `
-<div class="card">
+<div class="card" onclick="openDrama(${drama.id})">
 <img src="${drama.image}">
 <h3>${drama.title}</h3>
 <p>${drama.category}</p>
@@ -58,5 +58,7 @@ turkishContainer.innerHTML += createCard(drama);
 if(drama.category === "Indian"){
 indianContainer.innerHTML += createCard(drama);
 }
-
+function openDrama(id){
+window.location.href = `episode.html?id=${id}`;
+}
 });
