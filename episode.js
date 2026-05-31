@@ -25,7 +25,8 @@ if(episodes.length === 0){
 container.innerHTML = "<h2>No Episodes Found For This Drama</h2>";
 return;
 }
-
+document.getElementById("dramaTitle").innerText =
+"🎬 Kabhi Main Kabhi Tum";
 episodes.forEach(ep => {
 
 container.innerHTML += `
