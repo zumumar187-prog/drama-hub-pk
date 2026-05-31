@@ -339,3 +339,20 @@ border-radius:15px;
 border:2px solid red;
 box-shadow:0 0 25px rgba(255,0,0,.5);
 }
+#latestTitle{
+margin-top:20px;
+font-size:40px;
+color:#fff;
+}
+
+#latestDescription{
+font-size:22px;
+color:#ddd;
+margin:15px 0;
+}
+
+#latestWatchBtn{
+display:block;
+width:max-content;
+margin:20px 0;
+}
