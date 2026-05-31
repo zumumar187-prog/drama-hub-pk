@@ -258,3 +258,33 @@ color:white;
 font-family:Arial,sans-serif;
 padding:30px;
 }
+.episode-card{
+background:linear-gradient(135deg,#111,#1b1b1b);
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+border-left:5px solid #e50914;
+cursor:pointer;
+transition:0.3s;
+}
+
+.episode-card:hover{
+transform:translateX(10px);
+box-shadow:0 0 25px rgba(229,9,20,.5);
+}
+
+.episode-card h3{
+margin:0;
+color:white;
+font-size:24px;
+}
+
+.episode-card span{
+color:#aaa;
+font-size:14px;
+}
+
+#episodesContainer{
+max-width:1200px;
+margin:auto;
+}
