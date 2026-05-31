@@ -288,3 +288,19 @@ font-size:14px;
 max-width:1200px;
 margin:auto;
 }
+.back-btn{
+display:inline-block;
+background:#e50914;
+color:white;
+text-decoration:none;
+padding:10px 20px;
+border-radius:10px;
+margin-bottom:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#ff1f2d;
+transform:translateY(-2px);
+}
