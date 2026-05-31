@@ -52,3 +52,18 @@ indianContainer.innerHTML += createCard(drama);
 .catch(error => {
 console.log(error);
 });
+const latestPoster = document.getElementById("latestPoster");
+
+fetch(API_URL)
+.then(res => res.json())
+.then(data => {
+
+const dramas = data.dramas || data;
+
+if(dramas.length > 0 && latestPoster){
+
+latestPoster.src = dramas[0].thumbnail;
+
+}
+
+});
