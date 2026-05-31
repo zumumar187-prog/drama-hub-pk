@@ -8,13 +8,23 @@ fetch(API_URL)
 .then(res => res.json())
 .then(data => {
 
-const container =
-document.getElementById("episodesContainer");
+console.log(data);
 
-const episodes =
-data.episodes.filter(
+const container = document.getElementById("episodesContainer");
+
+if(!data.episodes){
+container.innerHTML = "<h2>No Episodes Found</h2>";
+return;
+}
+
+const episodes = data.episodes.filter(
 ep => String(ep.DramaID) === String(dramaId)
 );
+
+if(episodes.length === 0){
+container.innerHTML = "<h2>No Episodes Found For This Drama</h2>";
+return;
+}
 
 episodes.forEach(ep => {
 
@@ -25,14 +35,25 @@ padding:15px;
 margin:10px 0;
 border-radius:10px;
 cursor:pointer;
+border:1px solid #333;
 "
-onclick="window.open('${ep.VideoLink}')">
+onclick="window.open('${ep.VideoLink}','_blank')">
 
-<h3>${ep.EpisodeTitle}</h3>
+<h3 style="color:white;">
+📺 ${ep.EpisodeTitle}
+</h3>
 
 </div>
 `;
 
 });
+
+})
+.catch(error => {
+
+console.log(error);
+
+document.getElementById("episodesContainer").innerHTML =
+"<h2>API Error</h2>";
 
 });
