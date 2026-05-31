@@ -64,7 +64,8 @@ turkishContainer.innerHTML += createCard(drama);
 if(drama.category === "Indian"){
 indianContainer.innerHTML += createCard(drama);
 }
+});
+
 function openDrama(id){
 window.location.href = `episode.html?id=${id}`;
 }
-});
