@@ -98,10 +98,14 @@ padding:50px;
 }
 
 #dramaContainer{
+#latestContainer,
+#pakistaniContainer,
+#turkishContainer,
+#indianContainer{
 display:flex;
-gap:20px;
-justify-content:center;
 flex-wrap:wrap;
+gap:20px;
+justify-content:flex-start;
 }
 
 .card{
