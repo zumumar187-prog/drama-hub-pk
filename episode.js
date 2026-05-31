@@ -29,19 +29,12 @@ return;
 episodes.forEach(ep => {
 
 container.innerHTML += `
-<div style="
-background:#111;
-padding:15px;
-margin:10px 0;
-border-radius:10px;
-cursor:pointer;
-border:1px solid #333;
-"
+<div class="episode-card"
 onclick="window.open('${ep.VideoLink}','_blank')">
 
-<h3 style="color:white;">
-📺 ${ep.EpisodeTitle}
-</h3>
+<h3>📺 ${ep.EpisodeTitle}</h3>
+
+<span>Click to Watch Episode</span>
 
 </div>
 `;
