@@ -45,8 +45,7 @@ episodes.forEach(ep => {
 
 container.innerHTML += `
 <div class="episode-card"
-onclick="window.open('${ep.VideoLink}','_blank')">
-
+onclick="playVideo('${ep.VideoLink}')"
 <h3>📺 ${ep.EpisodeTitle}</h3>
 
 <span>Click to Watch Episode</span>
