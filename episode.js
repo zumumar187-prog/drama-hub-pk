@@ -64,3 +64,24 @@ document.getElementById("episodesContainer").innerHTML =
 "<h2>API Error</h2>";
 
 });
+
+function playVideo(videoUrl){
+
+const videoContainer = document.getElementById("videoContainer");
+
+videoContainer.innerHTML = `
+<iframe
+width="100%"
+height="500"
+src="${videoUrl}"
+frameborder="0"
+allowfullscreen>
+</iframe>
+`;
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
